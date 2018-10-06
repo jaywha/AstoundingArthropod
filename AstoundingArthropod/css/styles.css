@@ -1,0 +1,32 @@
+body{
+	background: url(../images/brick_oven.jpg) no-repeat center center fixed; 
+	background-size: cover;
+}
+
+#title{
+	font-size:20px;
+	color:gold;
+	text-align:center;
+	font-family:"Liberation Mono";
+	margin-bottom:20px;
+	margin-top:10px;
+}
+
+#gameContainer{
+	left:50%; 
+	transform:translateX(-50%);
+}
+
+#email-outer{
+	font-size:12px;
+	color:antiquewhite;
+	text-align:center;
+	font-family:"Liberation Mono";
+	margin-bottom:20px;
+	margin-top:10px;
+}
+
+#email-inner{
+	color:darkgreen; 
+	text-decoration:none
+}

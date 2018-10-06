@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>%UNITY_WEB_NAME%</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%", {Module: {
+        onRuntimeInitialized: function(){
+          var gameContainer = document.getElementById('gameContainer');
+          gameContainer.style.border = '10px solid antiquewhite';
+          gameContainer.style.borderRadius = '10px';
+          gameContainer.style.transition = 'all .5s ease-in 0.5s';
+        }
+      }});
+    </script>
+  </head>
+  <body>
+    <div id="title">My WebGame</div>
+    <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px;"></div>
+    <div id="email-outer">
+      <a id="email-inner" href="mailto:jayw685@email.com">jayw685@email.com</a>
+    </div>
+  </body>
+</html>
