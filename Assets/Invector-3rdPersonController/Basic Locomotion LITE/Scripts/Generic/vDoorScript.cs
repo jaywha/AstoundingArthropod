@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class vDoorScript : MonoBehaviour {
+public class vDoorScript : MonoBehaviour
+{
 
     public GameObject _door;
     public AudioClip _audioClip;
@@ -12,14 +13,18 @@ public class vDoorScript : MonoBehaviour {
     private bool _unlocked = false;
     private bool _opened = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if(vPickupItem.NumberPizzasPickedUp == vPickupItem.TOTAL_LVL1 && !_unlocked)
+    // Use this for initialization
+    void Start()
+    {
+        Debug.Log("Door Init: I'm the " + tag + ".");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if ((_door.CompareTag("GreenDoor") && vPickupItem.Level1Complete && vPickupItem.NumberPizzasPickedUp == vPickupItem.TOTAL_LVL1)
+            || (_door.CompareTag("RedDoor") && vPickupItem.Level2Complete && vPickupItem.NumberPizzasPickedUp == vPickupItem.TOTAL_LVL2)
+            && !_unlocked)
         {
             _unlocked = true;
             var objs = Resources.FindObjectsOfTypeAll(typeof(Text));
@@ -32,11 +37,15 @@ public class vDoorScript : MonoBehaviour {
             }
         }
 
+        Vector3 start = transform.position;
+        Vector3 end = transform.position + Vector3.down*-8.0f;
+        float seconds;
+
         if (Input.GetKeyDown(vThirdPersonInput.interactInput) && _unlocked && !_opened)
         {
             _opened = true;
-            transform.Rotate(0.0f, -90.0f, 0.0f, Space.Self);
-            transform.Translate(-10.0f, 0.0f, 1.0f);
+            seconds = Time.time;
+            transform.position = Vector3.Lerp(start, end, Time.time/(seconds+Time.deltaTime));
             _door.GetComponent<AudioSource>().PlayOneShot(_audioClip);
 
             var textWinRect = _textWin.GetComponent<RectTransform>();

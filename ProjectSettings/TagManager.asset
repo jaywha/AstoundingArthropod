@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Lock
   - Light
+  - GreenDoor
+  - RedDoor
   layers:
   - Default
   - TransparentFX
