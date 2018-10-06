@@ -90,6 +90,9 @@ namespace Invector.CharacterController
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Mouse button pressed!");
+            } else if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                //TODO: Bring up menu
             }
 
             float fov = Camera.main.fieldOfView;
