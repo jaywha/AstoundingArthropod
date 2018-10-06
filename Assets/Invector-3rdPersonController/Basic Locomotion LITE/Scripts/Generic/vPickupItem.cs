@@ -1,25 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Linq;
 
 public class vPickupItem : MonoBehaviour
 {
+    [HideInInspector]
+    public Text _textWin;
     AudioSource _audioSource;
     public AudioClip[] _audioClips;
     public GameObject _particle;
     private Text _textNumPickups;
-    [HideInInspector]
-    public Text _textWin;
     public static Text statText;
     private static bool _audioIndex = false;
+
     public static int NumberPizzasPickedUp = 0;
     private bool PickedUp = false;
+
+    public static int NumberOfLevels = 3;
     public static bool Level1Complete = false;
     public static bool Level2Complete = false;
     public static bool Level3Complete = false;
     public static int TOTAL_LVL1 = 27;
     public static int TOTAL_LVL2 = 5;
     public static int TOTAL_LVL3 = 5;
+    public static int CurrentTotal = 0;
 
     void Start()
     {
@@ -48,6 +53,13 @@ public class vPickupItem : MonoBehaviour
                                         , z < 0.0f ? 0.05f : z);
     }
 
+    void Update()
+    {
+        if(!Level1Complete) { CurrentTotal = TOTAL_LVL1; }
+        else if(!Level2Complete) { CurrentTotal = TOTAL_LVL2; }
+        else if(!Level3Complete) { CurrentTotal = TOTAL_LVL3; }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         NumberPizzasPickedUp += 1;
@@ -64,6 +76,11 @@ public class vPickupItem : MonoBehaviour
         {
             PickedUp = true;
             ChangeLevel(2);
+        }
+        else if(NumberPizzasPickedUp == TOTAL_LVL3 && Level1Complete && Level2Complete && !Level3Complete)
+        {
+            PickedUp = true;
+            ChangeLevel(3);
         }
         else if (other.CompareTag("Player") && !PickedUp)
         {
@@ -90,6 +107,15 @@ public class vPickupItem : MonoBehaviour
                 break;
             case 3:
                 Level3Complete = true;
+                _textWin.text = "P I Z Z A\nT I M E\nV I C T O R Y\nTimes saved to your desktop.";
+                var timesAsStrings = new string[NumberOfLevels+1];
+                timesAsStrings[0] = "Astounding Arthropod Times";
+                int counter = 0;
+                foreach(var time in vTrackingTimer.times)
+                {
+                    timesAsStrings[counter++] = string.Format("Level {0}: {1}\n", counter, vTrackingTimer.FormatTime(time));
+                }
+                System.IO.File.WriteAllLines(System.Environment.GetFolderPath(System.Environment.SpecialFolder.DesktopDirectory) + "\\PizzaTimes.txt", timesAsStrings);
                 break;
             default:
                 break;
