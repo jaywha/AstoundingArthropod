@@ -108,14 +108,7 @@ public class vPickupItem : MonoBehaviour
             case 3:
                 Level3Complete = true;
                 _textWin.text = "P I Z Z A\nT I M E\nV I C T O R Y\nTimes saved to your desktop.";
-                var timesAsStrings = new string[NumberOfLevels+1];
-                timesAsStrings[0] = "Astounding Arthropod Times";
-                int counter = 0;
-                foreach(var time in vTrackingTimer.times)
-                {
-                    timesAsStrings[counter++] = string.Format("Level {0}: {1}\n", counter, vTrackingTimer.FormatTime(time));
-                }
-                System.IO.File.WriteAllLines(System.Environment.GetFolderPath(System.Environment.SpecialFolder.DesktopDirectory) + "\\PizzaTimes.txt", timesAsStrings);
+                vLeaderboardManager.AddScore();
                 break;
             default:
                 break;

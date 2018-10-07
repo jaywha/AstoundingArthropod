@@ -27,6 +27,10 @@ body{
 }
 
 #email-inner{
-	color:darkgreen; 
+	color:aliceblue; 
 	text-decoration:none
 }
+
+.dreamloLBTable { border-collapse:collapse;text-align:center;width: 200px; }
+	.dreamloLBTable th { border-bottom: 1px solid #EEEEEE;font-weight:bold;margin:0;padding:4px; }
+	.dreamloLBTable td { border-bottom: 1px solid#EEEEEE;margin:0;padding:4px; }
