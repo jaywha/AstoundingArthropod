@@ -230,6 +230,8 @@ public class dreamloLeaderBoard : MonoBehaviour {
 	
 	string Clean(string s)
 	{
+        if (string.IsNullOrEmpty(s)) return "";
+
 		s = s.Replace("/", "");
 		s = s.Replace("|", "");
 		return s;
