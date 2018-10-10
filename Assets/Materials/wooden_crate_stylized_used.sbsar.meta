@@ -36,12 +36,13 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://wooden_crate_stylized_used\" label=\"\" >\n
-      \ <presetinput identifier=\"$outputsize\" uid=\"4134271283\" type=\"8\" value=\"10,10\"
+      \ <presetinput identifier=\"$outputsize\" uid=\"4134271283\" type=\"8\" value=\"9,9\"
       />\n  <presetinput identifier=\"height_position\" uid=\"2332522143\" type=\"0\"
       value=\"0.542\" />\n  <presetinput identifier=\"Advanced_parameters_Discolor\"
       uid=\"2243108704\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"Advanced_parameters_Lichen_Splat\"
       uid=\"2243108708\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"Advanced_parameters_Global_Grunge\"
-      uid=\"2243108716\" type=\"0\" value=\"0.7\" />\n </sbspreset>\n"
+      uid=\"2243108716\" type=\"0\" value=\"0.7\" />\n  <presetinput identifier=\"Advanced_parameters_Lichen_Splat_Scale\"
+      uid=\"2243109103\" type=\"0\" value=\"0.86\" />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: baseColor,normal,metallic,ambientOcclusion,height
     texturePackingList:
@@ -124,8 +125,8 @@ ScriptedImporter:
     - label: 
       bLockRatio: 1
       bHighQuality: 0
-      textureWidth: 1024
-      textureHeight: 1024
+      textureWidth: 512
+      textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
@@ -141,13 +142,13 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://wooden_crate_stylized_used\" label=\"\" >\n
-      \ <presetinput identifier=\"$outputsize\" uid=\"4134271283\" type=\"8\" value=\"10,10\"
+      \ <presetinput identifier=\"$outputsize\" uid=\"4134271283\" type=\"8\" value=\"9,9\"
       />\n  <presetinput identifier=\"height_position\" uid=\"2332522143\" type=\"0\"
       value=\"0.542\" />\n  <presetinput identifier=\"Advanced_parameters_Discolor\"
       uid=\"2243108704\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"Advanced_parameters_Moss\"
       uid=\"2243108710\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"Advanced_parameters_Global_Grunge\"
       uid=\"2243108716\" type=\"0\" value=\"0.7\" />\n  <presetinput identifier=\"Advanced_parameters_Moss_Moss_Growth\"
-      uid=\"2243108682\" type=\"0\" value=\"0.147\" />\n </sbspreset>\n"
+      uid=\"2243108682\" type=\"0\" value=\"0.139\" />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: baseColor,normal,metallic,ambientOcclusion,height
     texturePackingList:
@@ -230,14 +231,9 @@ ScriptedImporter:
     - label: 
       bLockRatio: 1
       bHighQuality: 0
-      textureWidth: 1024
-      textureHeight: 1024
+      textureWidth: 512
+      textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100002, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
-    generatedTextures:
-    - {fileID: 2800010, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
-    - {fileID: 2800012, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
-    - {fileID: 2800014, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
-    - {fileID: 2800016, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
-    - {fileID: 2800018, guid: 010ac2f283db882498ae79aedb7db8b8, type: 3}
+    generatedTextures: []
