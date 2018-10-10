@@ -3,7 +3,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
+using System.Net;
 using UnityEngine;
 
 public static class vLeaderboardManager {
@@ -15,13 +15,14 @@ public static class vLeaderboardManager {
     /// 
     /// </summary>
     /// <remarks>Format: add/NAME:Carmine/SCORE:1000/TIME:90 </remarks>
-    public static IEnumerator AddScore()
+    public static string AddScore()
     {
         var score = vTrackingTimer.times.Aggregate((curr, next) => 100 - (curr + next) % 100);
-        var web = new WWW(LeaderboardURL + "/add/" + PlayerName + "/" + score + "/" + vTrackingTimer.FormatTime(score) + "/");
-        
-        Debug.Log("Total times added: "+score);
-        yield return web;
-        Debug.Log("[WWW Response] --> " + Encoding.UTF8.GetString(web.bytes));
+        using (var web = new WebClient())
+        {
+            if (PlayerName.Equals("Arthropod")) PlayerName += (new System.Random()).Next();
+            web.OpenReadAsync(new Uri(LeaderboardURL + "/add/" + PlayerName + "/" + score + "/" + vTrackingTimer.FormatTime(score) + "/"));
+        }
+        return PlayerName;
     }
 }

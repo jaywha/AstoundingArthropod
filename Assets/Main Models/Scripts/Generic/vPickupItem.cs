@@ -107,8 +107,7 @@ public class vPickupItem : MonoBehaviour
                 break;
             case 3:
                 Level3Complete = true;
-                _textWin.text = "P I Z Z A\nT I M E\nV I C T O R Y\nTimes saved to your desktop.";
-                vLeaderboardManager.AddScore();
+                _textWin.text = string.Format("P I Z Z A\nT I M E\nV I C T O R Y\nTimes uploaded to leaderboard with username {0}.", vLeaderboardManager.AddScore());
                 break;
             default:
                 break;
