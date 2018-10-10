@@ -28,7 +28,14 @@ ScriptedImporter:
     graphDescIndex: 0
     generateAllOutputs: 0
     generateMipMaps: 1
-    preset: " <sbspreset pkgurl=\"pkg://plaster_facade_grey\" label=\"\" >\n </sbspreset>\n"
+    preset: " <sbspreset pkgurl=\"pkg://plaster_facade_grey\" label=\"\" >\n  <presetinput
+      identifier=\"metallic\" uid=\"3885482423\" type=\"4\" value=\"0\" />\n  <presetinput
+      identifier=\"luminosity\" uid=\"2667800010\" type=\"0\" value=\"0.228\" />\n
+      \ <presetinput identifier=\"contrast\" uid=\"2676430303\" type=\"0\" value=\"-0.187\"
+      />\n  <presetinput identifier=\"normal_intensity\" uid=\"2676430013\" type=\"0\"
+      value=\"0.562\" />\n  <presetinput identifier=\"roughness_value\" uid=\"3914716265\"
+      type=\"0\" value=\"0.639\" />\n  <presetinput identifier=\"height_range\" uid=\"3867917182\"
+      type=\"0\" value=\"0.464\" />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: baseColor,normal,metallic,ambientOcclusion,height
     texturePackingList:
@@ -115,5 +122,5 @@ ScriptedImporter:
       textureHeight: 256
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {instanceID: 0}
+    material: {fileID: 2100000, guid: 6b8f8ca46bfb19d41be05c5b9c3e85f0, type: 3}
     generatedTextures: []

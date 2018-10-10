@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 9db7c30f0a3f7814a9d6765868b88339
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: parquet_wood_wenge/parquet_wood_wenge
+    400000: parquet_wood_wenge/parquet_wood_wenge/Transform
+    2100000: mat.Parquet Wenge
+    2300000: parquet_wood_wenge/parquet_wood_wenge/MeshRenderer
+    2800000: Parquet Wenge_baseColor
+    2800002: Parquet Wenge_normal
+    2800004: Parquet Wenge_metallic
+    2800006: Parquet Wenge_height
+    3300000: parquet_wood_wenge/parquet_wood_wenge/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: parquet_wood_wenge/parquet_wood_wenge/SphereCollider
+    100100000: parquet_wood_wenge
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Parquet Wenge
+    prototypeName: Parquet Wenge
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://parquet_wood_wenge\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"331131448\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"$randomseed\" uid=\"1154399338\" type=\"4\" value=\"9728\"
+      />\n  <presetinput identifier=\"bevel_instensity\" uid=\"1658150347\" type=\"0\"
+      value=\"0.564\" />\n  <presetinput identifier=\"knots_amount\" uid=\"1654603469\"
+      type=\"0\" value=\"0.168\" />\n  <presetinput identifier=\"planks_contrast\"
+      uid=\"1655249620\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"veins_contrast\"
+      uid=\"1655696154\" type=\"0\" value=\"0.895\" />\n  <presetinput identifier=\"wood_roughness\"
+      uid=\"1655572934\" type=\"0\" value=\"0.025\" />\n  <presetinput identifier=\"saturation\"
+      uid=\"383783830\" type=\"0\" value=\"0.496\" />\n  <presetinput identifier=\"height_range\"
+      uid=\"1858199747\" type=\"0\" value=\"0.171\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Parquet Wenge_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Wenge_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 9db7c30f0a3f7814a9d6765868b88339, type: 3}
+    generatedTextures: []
