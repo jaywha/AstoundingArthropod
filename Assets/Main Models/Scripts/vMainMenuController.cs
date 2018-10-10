@@ -56,6 +56,7 @@ public class vMainMenuController : MonoBehaviour {
     {
         if (menuAudioPlayer != null) menuAudioPlayer.Stop();
 
+        if (string.IsNullOrEmpty(playerName)) playerName = "Arthropod" + (new System.Random()).Next();
         SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
     }
 

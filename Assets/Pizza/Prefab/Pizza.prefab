@@ -229,3 +229,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d661f1b6d2ecf134f921e4dbfe70ecd0, type: 3}
   - {fileID: 8300000, guid: 4025bfd83e6e2884c861f660a19e3828, type: 3}
   _particle: {fileID: 1728772748170624}
+  dreamloPrefab: {fileID: 0}

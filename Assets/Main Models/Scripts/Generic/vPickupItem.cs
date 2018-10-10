@@ -12,7 +12,8 @@ public class vPickupItem : MonoBehaviour
     public GameObject _particle;
     private Text _textNumPickups;
     public static Text statText;
-    public dreamloLeaderBoard leaderBoard;
+    public GameObject dreamloPrefab;
+    private dreamloLeaderBoard leaderBoard;
     private static bool _audioIndex = false;
 
     public static int NumberPizzasPickedUp = 0;
@@ -23,13 +24,18 @@ public class vPickupItem : MonoBehaviour
     public static bool Level1Complete = false;
     public static bool Level2Complete = false;
     public static bool Level3Complete = false;
-    public static int TOTAL_LVL1 = 27;
+    public static int TOTAL_LVL1 = 15;
     public static int TOTAL_LVL2 = 5;
     public static int TOTAL_LVL3 = 5;
     public static int CurrentTotal = 0;
 
     void Start()
     {
+        if (dreamloPrefab != null)
+        {
+            leaderBoard = dreamloPrefab.GetComponent<dreamloLeaderBoard>();            
+        }
+
         _audioSource = GetComponent<AudioSource>();
         var objs = Resources.FindObjectsOfTypeAll(typeof(Text));
         foreach (var holder in objs)

@@ -27,18 +27,30 @@ body{
 }
 
 #email-inner{
-	color:deepskyblue; 
-	text-decoration:none
+	color:aliceblue;
+    background-color:red;
+	text-decoration:none;
 }
 
 .dreamloLBTable {
-    border-collapse:collapse;text-align:center;width: 200px;
+    border-collapse:collapse;    
+    vertical-align: bottom;
+    text-align:center;
+    width: 200px;
+    background-color:tan;    
 }
 
 .dreamloLBTable th {
-    border-bottom: 1px solid #EEEEEE;font-weight:bold;margin:0;padding:4px;
+    border-bottom: 1px solid #EEEEEE;
+    font-weight:bold;
+    margin:0;
+    padding:4px;
+    text-shadow: 0.2px 0.8px;
 }
 
 .dreamloLBTable td {
-    border-bottom: 1px solid#EEEEEE;margin:0;padding:4px;
+    border-bottom: 1px solid#EEEEEE;
+    margin:0;
+    padding:4px;    
+    text-shadow: 0.2px 0.8px;
 }
