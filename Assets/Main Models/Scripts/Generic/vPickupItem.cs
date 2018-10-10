@@ -12,9 +12,11 @@ public class vPickupItem : MonoBehaviour
     public GameObject _particle;
     private Text _textNumPickups;
     public static Text statText;
+    public dreamloLeaderBoard leaderBoard;
     private static bool _audioIndex = false;
 
     public static int NumberPizzasPickedUp = 0;
+    public static int TotalNumberPizzasPickedUp = 0;
     private bool PickedUp = false;
 
     public static int NumberOfLevels = 3;
@@ -63,6 +65,7 @@ public class vPickupItem : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         NumberPizzasPickedUp += 1;
+        TotalNumberPizzasPickedUp += 1;
 
         Renderer[] renderers = GetComponentsInChildren<Renderer>();
         foreach (Renderer r in renderers) r.enabled = false;
@@ -107,7 +110,8 @@ public class vPickupItem : MonoBehaviour
                 break;
             case 3:
                 Level3Complete = true;
-                _textWin.text = string.Format("P I Z Z A\nT I M E\nV I C T O R Y\nTimes uploaded to leaderboard with username {0}.", vLeaderboardManager.AddScore());
+                leaderBoard.AddScore(vMainMenuController.playerName, TotalNumberPizzasPickedUp , (int) vTrackingTimer.times.Aggregate((curr, next)=>curr+next));
+                _textWin.text = string.Format("P I Z Z A\nT I M E\nV I C T O R Y\nTimes uploaded to leaderboard with username {0}.", vMainMenuController.playerName);
                 break;
             default:
                 break;

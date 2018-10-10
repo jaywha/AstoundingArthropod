@@ -55,6 +55,7 @@ public class vMainMenuController : MonoBehaviour {
     void StartButtonClick()
     {
         if (menuAudioPlayer != null) menuAudioPlayer.Stop();
+
         SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
     }
 
@@ -65,7 +66,7 @@ public class vMainMenuController : MonoBehaviour {
 
     void ParseTextboxInput(string inputText)
     {
-        vLeaderboardManager.PlayerName = inputText;
-        Debug.Log(string.Format("Current Player Name Updated to {0}!", vLeaderboardManager.PlayerName));
+        playerName = inputText;
+        Debug.Log(string.Format("Current Player Name Updated to {0}!", playerName));
     }
 }

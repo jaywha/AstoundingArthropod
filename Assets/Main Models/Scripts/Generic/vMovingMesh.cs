@@ -34,7 +34,7 @@ public class vMovingMesh : MonoBehaviour
         // Set our position as a fraction of the distance between the markers.
         transform.position = Vector3.Lerp(mark1.position, mark2.position, fracJourney);
 
-        Debug.Log("Fraction of the Journey --> " + fracJourney);
+        //Debug.Log("Fraction of the Journey --> " + fracJourney);
 
         if(fracJourney >= 1.0f)
         {
