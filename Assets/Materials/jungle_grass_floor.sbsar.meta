@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 8c18686bdceb7dc40af4fcbe8e602dd0
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: jungle_grass_floor/jungle_grass_floor
+    400000: jungle_grass_floor/jungle_grass_floor/Transform
+    2100000: mat.Jungle Grass Floor
+    2300000: jungle_grass_floor/jungle_grass_floor/MeshRenderer
+    2800000: Jungle Grass Floor_baseColor
+    2800002: Jungle Grass Floor_normal
+    2800004: Jungle Grass Floor_metallic
+    2800006: Jungle Grass Floor_height
+    2800008: Jungle Grass Floor_ambientOcclusion
+    3300000: jungle_grass_floor/jungle_grass_floor/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: jungle_grass_floor/jungle_grass_floor/SphereCollider
+    100100000: jungle_grass_floor
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Jungle Grass Floor
+    prototypeName: Jungle Grass Floor
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://jungle_grass_floor\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height,ambientOcclusion
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: mask
+      alphaSource: mask
+    textureParameters:
+    - textureName: Jungle Grass Floor_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Jungle Grass Floor_mask
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: mask
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {instanceID: 0}
+    generatedTextures: []

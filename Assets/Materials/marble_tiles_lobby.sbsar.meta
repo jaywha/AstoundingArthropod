@@ -31,9 +31,9 @@ ScriptedImporter:
     preset: " <sbspreset pkgurl=\"pkg://marble_tiles_lobby\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"3034799163\" type=\"8\" value=\"9,9\" />\n
       \ <presetinput identifier=\"height_range\" uid=\"3382265131\" type=\"0\" value=\"0.399\"
-      />\n  <presetinput identifier=\"age\" uid=\"3341181899\" type=\"0\" value=\"0.427\"
+      />\n  <presetinput identifier=\"age\" uid=\"3341181899\" type=\"0\" value=\"0.497\"
       />\n  <presetinput identifier=\"white_spots\" uid=\"3346400397\" type=\"0\"
-      value=\"0.736\" />\n  <presetinput identifier=\"gap\" uid=\"3339018943\" type=\"0\"
+      value=\"0.759\" />\n  <presetinput identifier=\"gap\" uid=\"3339018943\" type=\"0\"
       value=\"0.357\" />\n  <presetinput identifier=\"color_balance\" uid=\"3341230901\"
       type=\"0\" value=\"0.302\" />\n </sbspreset>\n"
     shaderName: Standard
