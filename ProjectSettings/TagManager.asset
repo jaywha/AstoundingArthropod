@@ -8,6 +8,10 @@ TagManager:
   - Light
   - GreenDoor
   - RedDoor
+  - StartButton
+  - GoBackButton
+  - SettingsButton
+  - PlayerNameTextbox
   layers:
   - Default
   - TransparentFX
