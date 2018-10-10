@@ -29,7 +29,7 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://tiles_granite_sera_grey\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"1171411985\" type=\"8\" value=\"11,11\" />\n
+      identifier=\"$outputsize\" uid=\"1171411985\" type=\"8\" value=\"9,9\" />\n
       \ <presetinput identifier=\"$randomseed\" uid=\"312492611\" type=\"4\" value=\"7202\"
       />\n  <presetinput identifier=\"normal_format\" uid=\"968665240\" type=\"4\"
       value=\"1\" />\n  <presetinput identifier=\"height_range\" uid=\"950553857\"
@@ -120,14 +120,9 @@ ScriptedImporter:
     - label: 
       bLockRatio: 1
       bHighQuality: 0
-      textureWidth: 2048
-      textureHeight: 2048
+      textureWidth: 512
+      textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: ad43593be7a79f54eae3eda3c536170b, type: 3}
-    generatedTextures:
-    - {fileID: 2800000, guid: ad43593be7a79f54eae3eda3c536170b, type: 3}
-    - {fileID: 2800002, guid: ad43593be7a79f54eae3eda3c536170b, type: 3}
-    - {fileID: 2800004, guid: ad43593be7a79f54eae3eda3c536170b, type: 3}
-    - {fileID: 2800006, guid: ad43593be7a79f54eae3eda3c536170b, type: 3}
-    - {fileID: 2800008, guid: ad43593be7a79f54eae3eda3c536170b, type: 3}
+    generatedTextures: []
