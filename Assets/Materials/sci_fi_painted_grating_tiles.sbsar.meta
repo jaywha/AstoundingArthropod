@@ -30,12 +30,15 @@ ScriptedImporter:
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://sci_fi_painted_grating_tiles\" label=\"\"
       >\n  <presetinput identifier=\"$outputsize\" uid=\"2390043175\" type=\"8\" value=\"9,9\"
-      />\n  <presetinput identifier=\"paint_wear_amount\" uid=\"4208340134\" type=\"0\"
-      value=\"0.378\" />\n  <presetinput identifier=\"dirt_amount\" uid=\"4199429020\"
-      type=\"0\" value=\"0.359\" />\n  <presetinput identifier=\"surface_damage_intensity\"
+      />\n  <presetinput identifier=\"paint_color\" uid=\"4209164148\" type=\"2\"
+      value=\"0.395603,0.500169,0.660377\" />\n  <presetinput identifier=\"paint_wear_amount\"
+      uid=\"4208340134\" type=\"0\" value=\"0.463\" />\n  <presetinput identifier=\"dirt_amount\"
+      uid=\"4199429020\" type=\"0\" value=\"0.359\" />\n  <presetinput identifier=\"surface_damage_intensity\"
       uid=\"4209023806\" type=\"0\" value=\"0.326\" />\n  <presetinput identifier=\"paint_discoloration\"
-      uid=\"4199427457\" type=\"0\" value=\"0.674\" />\n  <presetinput identifier=\"roughness\"
-      uid=\"4199471004\" type=\"0\" value=\"0.232\" />\n </sbspreset>\n"
+      uid=\"4199427457\" type=\"0\" value=\"0.686\" />\n  <presetinput identifier=\"roughness\"
+      uid=\"4199471004\" type=\"0\" value=\"0.379\" />\n  <presetinput identifier=\"height_range\"
+      uid=\"4077412572\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"height_position\"
+      uid=\"4077412525\" type=\"0\" value=\"0.592\" />\n </sbspreset>\n"
     shaderName: Standard
     outputNames: baseColor,normal,metallic,height,ambientOcclusion
     texturePackingList:
