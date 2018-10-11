@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: b409c6474b595994285ee070b94ca063
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: sci_fi_retro_screen_wall/sci_fi_retro_screen_wall
+    400000: sci_fi_retro_screen_wall/sci_fi_retro_screen_wall/Transform
+    2100000: mat.Sci Fi Retro Screen Wall
+    2300000: sci_fi_retro_screen_wall/sci_fi_retro_screen_wall/MeshRenderer
+    2800000: Sci Fi Retro Screen Wall_baseColor
+    2800002: Sci Fi Retro Screen Wall_normal
+    2800004: Sci Fi Retro Screen Wall_emissive
+    2800006: Sci Fi Retro Screen Wall_metallic
+    2800008: Sci Fi Retro Screen Wall_height
+    2800010: Sci Fi Retro Screen Wall_ambientOcclusion
+    3300000: sci_fi_retro_screen_wall/sci_fi_retro_screen_wall/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: sci_fi_retro_screen_wall/sci_fi_retro_screen_wall/SphereCollider
+    100100000: sci_fi_retro_screen_wall
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Sci Fi Retro Screen Wall
+    prototypeName: Sci Fi Retro Screen Wall
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://sci_fi_retro_screen_wall\" label=\"\" >\n
+      \ <presetinput identifier=\"$outputsize\" uid=\"1821437125\" type=\"8\" value=\"11,11\"
+      />\n  <presetinput identifier=\"plastic_color\" uid=\"413925421\" type=\"2\"
+      value=\"1,1,1\" />\n  <presetinput identifier=\"button_color\" uid=\"413940393\"
+      type=\"2\" value=\"0.726148,0.730892,0.773585\" />\n  <presetinput identifier=\"display_color_b\"
+      uid=\"414027251\" type=\"2\" value=\"0.305207,0.783019,0.25485\" />\n  <presetinput
+      identifier=\"display_color_c\" uid=\"414033036\" type=\"2\" value=\"0.0480895,1,0\"
+      />\n  <presetinput identifier=\"display_color_d\" uid=\"414035958\" type=\"2\"
+      value=\"0.523006,0.67832,0.688679\" />\n  <presetinput identifier=\"height_range\"
+      uid=\"300787262\" type=\"0\" value=\"0.864\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,emissive,metallic,height,ambientOcclusion
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: emissive
+      alphaSource: emissive
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    textureParameters:
+    - textureName: Sci Fi Retro Screen Wall_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_emissive
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Retro Screen Wall_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: emissive
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: b409c6474b595994285ee070b94ca063, type: 3}
+    generatedTextures:
+    - {fileID: 2800000, guid: b409c6474b595994285ee070b94ca063, type: 3}
+    - {fileID: 2800002, guid: b409c6474b595994285ee070b94ca063, type: 3}
+    - {fileID: 2800004, guid: b409c6474b595994285ee070b94ca063, type: 3}
+    - {fileID: 2800006, guid: b409c6474b595994285ee070b94ca063, type: 3}
+    - {fileID: 2800008, guid: b409c6474b595994285ee070b94ca063, type: 3}
+    - {fileID: 2800010, guid: b409c6474b595994285ee070b94ca063, type: 3}

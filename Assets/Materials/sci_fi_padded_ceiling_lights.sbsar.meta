@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 94b74341bbadfa94e86103ade5a63359
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: sci_fi_padded_ceiling_lights/sci_fi_padded_ceiling_lights
+    400000: sci_fi_padded_ceiling_lights/sci_fi_padded_ceiling_lights/Transform
+    2100000: mat.Sci Fi Padded Ceiling Lights
+    2300000: sci_fi_padded_ceiling_lights/sci_fi_padded_ceiling_lights/MeshRenderer
+    2800000: Sci Fi Padded Ceiling Lights_baseColor
+    2800002: Sci Fi Padded Ceiling Lights_normal
+    2800004: Sci Fi Padded Ceiling Lights_emissive
+    2800006: Sci Fi Padded Ceiling Lights_metallic
+    2800008: Sci Fi Padded Ceiling Lights_height
+    2800010: Sci Fi Padded Ceiling Lights_ambientOcclusion
+    3300000: sci_fi_padded_ceiling_lights/sci_fi_padded_ceiling_lights/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: sci_fi_padded_ceiling_lights/sci_fi_padded_ceiling_lights/SphereCollider
+    100100000: sci_fi_padded_ceiling_lights
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Sci Fi Padded Ceiling Lights
+    prototypeName: Sci Fi Padded Ceiling Lights
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://sci_fi_padded_ceiling_lights\" label=\"\"
+      >\n  <presetinput identifier=\"$outputsize\" uid=\"1276482160\" type=\"8\" value=\"11,11\"
+      />\n  <presetinput identifier=\"$randomseed\" uid=\"459768866\" type=\"4\" value=\"8287\"
+      />\n  <presetinput identifier=\"metal_roughness\" uid=\"945020478\" type=\"0\"
+      value=\"0.504\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,emissive,metallic,height,ambientOcclusion
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: emissive
+      alphaSource: emissive
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    textureParameters:
+    - textureName: Sci Fi Padded Ceiling Lights_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_emissive
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Sci Fi Padded Ceiling Lights_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: emissive
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}
+    generatedTextures:
+    - {fileID: 2800000, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}
+    - {fileID: 2800002, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}
+    - {fileID: 2800004, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}
+    - {fileID: 2800006, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}
+    - {fileID: 2800008, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}
+    - {fileID: 2800010, guid: 94b74341bbadfa94e86103ade5a63359, type: 3}

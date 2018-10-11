@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 66e6b64901dc3dc45a6e69ed36ea3a30
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: chrome_grey/chrome_grey
+    400000: chrome_grey/chrome_grey/Transform
+    2100000: 'mat.Chrome '
+    2300000: chrome_grey/chrome_grey/MeshRenderer
+    2800000: Chrome _baseColor
+    2800002: Chrome _normal
+    2800004: Chrome _metallic
+    2800006: Chrome _height
+    3300000: chrome_grey/chrome_grey/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: chrome_grey/chrome_grey/SphereCollider
+    100100000: chrome_grey
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: 'Chrome '
+    prototypeName: 'Chrome '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://chrome_grey\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3191278971\" type=\"8\" value=\"9,9\" />\n
+      \ <presetinput identifier=\"color\" uid=\"3483632722\" type=\"2\" value=\"0.801887,0.801887,0.801887\"
+      />\n  <presetinput identifier=\"chrome_roughness\" uid=\"3483635427\" type=\"0\"
+      value=\"0.293\" />\n  <presetinput identifier=\"scratches\" uid=\"3483639854\"
+      type=\"0\" value=\"0.433\" />\n  <presetinput identifier=\"scratch_intensity\"
+      uid=\"3483642557\" type=\"0\" value=\"0.118\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Chrome _glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Chrome _height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 66e6b64901dc3dc45a6e69ed36ea3a30, type: 3}
+    generatedTextures:
+    - {fileID: 2800000, guid: 66e6b64901dc3dc45a6e69ed36ea3a30, type: 3}
+    - {fileID: 2800002, guid: 66e6b64901dc3dc45a6e69ed36ea3a30, type: 3}
+    - {fileID: 2800004, guid: 66e6b64901dc3dc45a6e69ed36ea3a30, type: 3}
+    - {fileID: 2800006, guid: 66e6b64901dc3dc45a6e69ed36ea3a30, type: 3}

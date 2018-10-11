@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 8159bdb7d8940c34dbad885aa4374960
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: diamond_plate/diamond_plate
+    400000: diamond_plate/diamond_plate/Transform
+    2100000: mat.Diamond Plate
+    2100002: mat.Diamond Plate_1
+    2100004: mat.Diamond Plate_2
+    2300000: diamond_plate/diamond_plate/MeshRenderer
+    2800000: Diamond Plate_baseColor
+    2800002: Diamond Plate_normal
+    2800004: Diamond Plate_metallic
+    2800006: Diamond Plate_ambientOcclusion
+    2800008: Diamond Plate_height
+    2800010: Diamond Plate_1_baseColor
+    2800012: Diamond Plate_1_normal
+    2800014: Diamond Plate_1_metallic
+    2800016: Diamond Plate_1_ambientOcclusion
+    2800018: Diamond Plate_1_height
+    2800020: Diamond Plate_2_baseColor
+    2800022: Diamond Plate_2_normal
+    2800024: Diamond Plate_2_metallic
+    2800026: Diamond Plate_2_ambientOcclusion
+    2800028: Diamond Plate_2_height
+    3300000: diamond_plate/diamond_plate/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    11400004: graph1
+    11400006: graph2
+    13500000: diamond_plate/diamond_plate/SphereCollider
+    100100000: diamond_plate
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Diamond Plate
+    prototypeName: Diamond Plate
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://diamond_plate\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"783851782\" type=\"8\" value=\"9,9\" />\n  <presetinput
+      identifier=\"patterns_type\" uid=\"736070926\" type=\"4\" value=\"1\" />\n  <presetinput
+      identifier=\"age\" uid=\"1413971792\" type=\"0\" value=\"0\" />\n  <presetinput
+      identifier=\"metal_roughness\" uid=\"1406995208\" type=\"0\" value=\"0.737\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Diamond Plate_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    generatedTextures:
+    - {fileID: 2800000, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800002, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800004, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800006, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800008, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+  - graphLabel: Diamond Plate_1
+    prototypeName: Diamond Plate
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://diamond_plate\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"783851782\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"age\" uid=\"1413971792\" type=\"0\" value=\"0.544\"
+      />\n  <presetinput identifier=\"metal_color\" uid=\"1413896500\" type=\"2\"
+      value=\"0.443396,0.429951,0.370194\" />\n  <presetinput identifier=\"metal_roughness\"
+      uid=\"1406995208\" type=\"0\" value=\"0.621\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Diamond Plate_1_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_1_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100002, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    generatedTextures:
+    - {fileID: 2800010, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800012, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800014, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800016, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800018, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+  - graphLabel: Diamond Plate_2
+    prototypeName: Diamond Plate
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://diamond_plate\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"783851782\" type=\"8\" value=\"9,9\" />\n  <presetinput
+      identifier=\"age\" uid=\"1413971792\" type=\"0\" value=\"0.203\" />\n  <presetinput
+      identifier=\"metal_roughness\" uid=\"1406995208\" type=\"0\" value=\"0.457\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Diamond Plate_2_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Diamond Plate_2_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100004, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    generatedTextures:
+    - {fileID: 2800020, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800022, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800024, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800026, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}
+    - {fileID: 2800028, guid: 8159bdb7d8940c34dbad885aa4374960, type: 3}

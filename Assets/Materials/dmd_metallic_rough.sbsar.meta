@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 1a1d6224402d0944dad569ba15983118
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: dmd_metallic_rough/dmd_metallic_rough
+    400000: dmd_metallic_rough/dmd_metallic_rough/Transform
+    2100000: mat.Dmd Metallic Rough
+    2300000: dmd_metallic_rough/dmd_metallic_rough/MeshRenderer
+    2800000: Dmd Metallic Rough_baseColor
+    2800002: Dmd Metallic Rough_normal
+    2800004: Dmd Metallic Rough_metallic
+    2800006: Dmd Metallic Rough_height
+    3300000: dmd_metallic_rough/dmd_metallic_rough/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: dmd_metallic_rough/dmd_metallic_rough/SphereCollider
+    100100000: dmd_metallic_rough
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Dmd Metallic Rough
+    prototypeName: Dmd Metallic Rough
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://dmd_metallic_rough\" label=\"\" >\n  <presetinput
+      identifier=\"imperfection_amount\" uid=\"122241505\" type=\"0\" value=\"0\"
+      />\n  <presetinput identifier=\"thickness\" uid=\"129080632\" type=\"4\" value=\"27\"
+      />\n  <presetinput identifier=\"depth\" uid=\"129020524\" type=\"0\" value=\"0.578\"
+      />\n  <presetinput identifier=\"lines_direction\" uid=\"129097725\" type=\"0\"
+      value=\"0\" />\n  <presetinput identifier=\"roughness\" uid=\"125510457\" type=\"0\"
+      value=\"0.635\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Dmd Metallic Rough_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Dmd Metallic Rough_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 1a1d6224402d0944dad569ba15983118, type: 3}
+    generatedTextures:
+    - {fileID: 2800000, guid: 1a1d6224402d0944dad569ba15983118, type: 3}
+    - {fileID: 2800002, guid: 1a1d6224402d0944dad569ba15983118, type: 3}
+    - {fileID: 2800004, guid: 1a1d6224402d0944dad569ba15983118, type: 3}
+    - {fileID: 2800006, guid: 1a1d6224402d0944dad569ba15983118, type: 3}
